@@ -41,14 +41,11 @@ select
     cast(congestion_surcharge as numeric) as congestion_surcharge
 
 from {{ source ('staging', 'green_tripdata') }}
-limit 100
--- from tripdata
--- where rn = 1
+where vendorid is not null
 
+-- dbt build --m <model.sql> --var 'is_test_run: false'
+{% if var('is_test_run', default=true) %}
 
--- -- dbt build --m <model.sql> --var 'is_test_run: false'
--- {% if var('is_test_run', default=true) %}
+  limit 100
 
---   limit 100
-
--- {% endif %}
+{% endif %}
