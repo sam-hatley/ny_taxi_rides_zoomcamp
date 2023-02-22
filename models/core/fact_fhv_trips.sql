@@ -10,7 +10,6 @@ dim_zones AS (
     FROM {{ ref('dim_zones') }}
     where borough != 'Unknown'
 )
-
 SELECT 
     fhv_data.dispatching_bASe_num, 
     fhv_data.pulocationid, 
