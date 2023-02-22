@@ -11,7 +11,7 @@ dim_zones AS (
     where borough != 'Unknown'
 )
 SELECT 
-    fhv_data.dispatching_bASe_num, 
+    fhv_data.dispatching_base_num, 
     fhv_data.pulocationid, 
     pickup_zone.borough AS pickup_borough, 
     pickup_zone.zone AS pickup_zone, 
