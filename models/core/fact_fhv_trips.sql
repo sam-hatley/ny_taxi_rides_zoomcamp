@@ -20,8 +20,6 @@ SELECT
     dropoff_zone.zone AS dropoff_zone,  
     fhv_data.pickup_datetime, 
     fhv_data.dropoff_datetime,
-    fhv_data.pickup_datetime, 
-    fhv_data.dropoff_datetime, 
     fhv_data.sr_flag, 
     fhv_data.affiliated_base_number
 FROM fhv_data
