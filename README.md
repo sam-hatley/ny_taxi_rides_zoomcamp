@@ -28,7 +28,7 @@ tables:
     - name: fhv_tripdata
 ```
 
-2. Added the following file [sth_fhv_tripdata.sql](models/staging/stg_fhv_tripdata.sql)
+2. Added [sth_fhv_tripdata.sql](models/staging/stg_fhv_tripdata.sql)
 ```sql
 {{ config(materialized='view') }}
 
@@ -44,6 +44,10 @@ FROM {{ source('staging', 'fhv_tripdata') }}
 
 ...
 ```
+
+3. Added [fact_fhv_trips.sql](models/core/fact_fhv_trips.sql), which was a basic rewrite of [fact_trips.sql](models/core/fact_trips.sql)
+
+Also: although I defaulted `is_test_run` to `FALSE`, I made sure to add the entry `dbt run --var 'is_test_run: false'` to the job itself.  
 
 
 ### Question 1: 
