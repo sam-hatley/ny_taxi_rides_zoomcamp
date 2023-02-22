@@ -57,10 +57,9 @@ Also: although I defaulted `is_test_run` to `FALSE`, I made sure to add the entr
 >You'll need to have completed the ["Build the first dbt models"](https://www.youtube.com/watch?v=UVI30Vxzd6c) video and have been able to run the models via the CLI. 
 >You should find the views and models for querying in your DWH.
 
-- 41648442
-- 51648442
 - 61648442
-- 71648442
+
+This can be done either from looker, or with an SQL query. My number was 61,568,714.
 
 
 ### Question 2: 
@@ -70,9 +69,8 @@ Also: although I defaulted `is_test_run` to `FALSE`, I made sure to add the entr
 >You will need to complete "Visualising the data" videos, either using [google data studio](https://www.youtube.com/watch?v=39nLTs74A3E) or [metabase](https://www.youtube.com/watch?v=BnLkrA7a6gM). 
 
 - 89.9/10.1
-- 94/6
-- 76.3/23.7
-- 99.1/0.9
+
+Done by selecting a date range from within looker
 
 
 
@@ -83,11 +81,9 @@ Also: although I defaulted `is_test_run` to `FALSE`, I made sure to add the entr
 >Create a staging model for the fhv data for 2019 and do not add a deduplication step. Run it via the CLI without limits (is_test_run: false).
 >Filter records with pickup time in year 2019.
 
-- 33244696
 - 43244696
-- 53244696
-- 63244696
 
+This can be done either from looker, or with an SQL query. My number was 43,244,696.
 
 ### Question 4: 
 
@@ -97,10 +93,9 @@ Also: although I defaulted `is_test_run` to `FALSE`, I made sure to add the entr
 >Similar to what we've done in fact_trips, keep only records with known pickup and dropoff locations entries for pickup and dropoff locations. 
 >Run it via the CLI without limits (is_test_run: false) and filter records with pickup time in year 2019.
 
-- 12998722
 - 22998722
-- 32998722
-- 42998722
+
+This can be done either from looker, or with an SQL query. My number was 22,998,722.
 
 ### Question 5: 
 
@@ -108,12 +103,9 @@ Also: although I defaulted `is_test_run` to `FALSE`, I made sure to add the entr
 
 >Create a dashboard with some tiles that you find interesting to explore the data. One tile should show the amount of trips per month, as done in the videos for fact_trips, based on the fact_fhv_trips table.
 
-- March
-- April
 - January
-- December
 
-
+Something bizarre happened after January. [Dashboard here](https://lookerstudio.google.com/reporting/eb30ae3a-dc94-4b3f-8e6b-be46f1b8153c).
 
 ## Submitting the solutions
 
