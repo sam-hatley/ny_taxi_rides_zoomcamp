@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
-fhv_data AS (
+WITH fhv_data AS (
     SELECT *
     FROM {{ ref('stg_fhv_tripdata') }}
 ), 
